@@ -19,12 +19,29 @@
         <div class="form-group">
           <label for="file">Selecciona tu archivo</label>
           <input type="file" class="form-control-file" name="file" id="file" placeholder="Selecciona tu archivo"
-            aria-describedby="fileHelpId">
+            aria-describedby="fileHelpId" accept="image/*">
         </div>
       </form>
     </div>
     <div class="col-md-6">
-      <img src="https://ipfs.io/ipfs/QmQZL9s2qknAyeebdMVwZTjYL7zJjkjv15BB4TkaHrZSrK" alt="" srcset="" id="img-ipfs">
+      <div class="text-center d-none" id="spinner-charging">
+        <p class="font-weight-bold text-lg h5">Subiendo...</p>
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a id="img-ipfs-url" target="_blank">
+          <img src="" alt="img-not-found" id="img-ipfs" class="img-fluid w-100">
+        </a>
+      </div>
     </div>
 
   </div>
