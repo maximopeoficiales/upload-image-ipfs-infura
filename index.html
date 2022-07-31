@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Vite App</title>
+
+</head>
+
+<body>
+  <h1 class="text-center my-4">Subida de archivos a <a href="https://js.ipfs.io/" target="_blank">IPFS</a></h1>
+  <div class="row p-4">
+    <div class="col-md-6">
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="file">Selecciona tu archivo</label>
+          <input type="file" class="form-control-file" name="file" id="file" placeholder="Selecciona tu archivo"
+            aria-describedby="fileHelpId">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="https://ipfs.io/ipfs/QmQZL9s2qknAyeebdMVwZTjYL7zJjkjv15BB4TkaHrZSrK" alt="" srcset="" id="img-ipfs">
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
